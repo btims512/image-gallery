@@ -21,7 +21,11 @@ const ImageSearch = ({ searchText }) => {
       <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
         <form onSubmit={onSubmit} className="w-full max-w-sm">
           <div className="flex items-center border-b border-customBlue py-2">
+            <label htmlFor="search-input" className="sr-only">
+              Search Image
+            </label>
             <input
+              id="search-input"
               onChange={(e) => setText(e.target.value)}
               className="appearance-none bg-transparent border-none w-full text-gray-700 dark:text-gray-300 mr-3 py-1 px-2 leading-tight focus:outline-none"
               type="text"

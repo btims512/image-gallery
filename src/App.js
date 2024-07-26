@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import ImageSearch from "./components/ImageSearch";
 import ImageCards from "./components/ImageCards";
+import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,6 +32,7 @@ function App() {
       <button
         onClick={() => setDarkMode(!darkMode)}
         className="flex-shrink-0 bg-customBlue dark:bg-customGrayDark hover:bg-customBlueDark dark:hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mb-4 focus:outline-none"
+        aria-label="Toggle dark mode"
       >
         {darkMode ? <FaSun /> : <FaMoon />}
       </button>
@@ -42,7 +44,7 @@ function App() {
       )}
       {isLoading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="loader border-t-customBlueDark"></div>
+          <LoadingSpinner />
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

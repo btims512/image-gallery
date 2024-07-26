@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -38,6 +37,16 @@
   }
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 .spinner {
   width: 40px;
@@ -602,9 +611,6 @@ video {
 .rounded-lg{
   border-radius: 0.5rem;
 }
-.border-4{
-  border-width: 4px;
-}
 .border-b{
   border-bottom-width: 1px;
 }
@@ -727,10 +733,6 @@ video {
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-.dark .dark\:border-customGrayLight{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 .dark .dark\:bg-gray-900{
   --tw-bg-opacity: 1;
