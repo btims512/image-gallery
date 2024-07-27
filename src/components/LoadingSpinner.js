@@ -1,9 +1,12 @@
 import React from "react";
+import loadingIcon from "../assets/loading-icon.svg";
 
 const LoadingSpinner = () => (
-  <div role="status" aria-label="Loading" className="spinner">
-    <div className="double-bounce1"></div>
-    <div className="double-bounce2"></div>
+  <div
+    className="flex justify-center items-center"
+    style={{ paddingTop: "170px" }}
+  >
+    <img src={loadingIcon} alt="Loading" className="w-20 h-20" />
   </div>
 );
 

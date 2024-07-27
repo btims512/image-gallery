@@ -5,6 +5,9 @@ module.exports = {
   darkMode: "class", // Enable dark mode using a class
   theme: {
     extend: {
+      animation: {
+        spin: "spin 1s linear infinite",
+      },
       colors: {
         customBlue: "#67adf9",
         customBlueDark: "#569ddf",

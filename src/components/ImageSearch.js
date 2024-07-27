@@ -10,7 +10,7 @@ const ImageSearch = ({ searchText }) => {
   };
 
   return (
-    <div>
+    <div className="w-full flex flex-col items-center">
       <div className="text-center my-10">
         <img
           src={logo}
@@ -18,7 +18,7 @@ const ImageSearch = ({ searchText }) => {
           className="mb-2 mx-auto w-80 p-4.5"
         />
       </div>
-      <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
+      <div className="max-w-sm w-full rounded overflow-hidden my-10 mx-auto">
         <form onSubmit={onSubmit} className="w-full max-w-sm">
           <div className="flex items-center border-b border-customBlue py-2">
             <label htmlFor="search-input" className="sr-only">
@@ -32,7 +32,7 @@ const ImageSearch = ({ searchText }) => {
               placeholder="Search Image..."
             />
             <button
-              className="flex-shrink-0 bg-customBlue dark:bg-customGrayDark hover:bg-customBlueDark dark:hover:bg-gray-700 border-none text-sm text-white py-1 px-2 rounded"
+              className="flex-shrink-0 bg-customBlue dark:bg-customGrayDark hover:bg-customBlueDark dark:hover:bg-gray-700 border-none text-sm text-white py-1 px-2 rounded md:text-base md:py-2 md:px-4"
               type="submit"
             >
               Search
