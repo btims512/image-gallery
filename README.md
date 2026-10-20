@@ -1,5 +1,13 @@
-Image gallery utilizing Create React App && TailWind CSS. 
-Images are called using pixabay API with fully integrated search functionality.
+## Live Demo
 
-Refer to https://pixabay.com/api/docs/ for further information. 
-### Making a Progressive Web App
+https://picturehut.netlify.app
+
+## Run It Locally
+
+1. Clone the repo and run `npm install`.
+2. Get a free API key from Pixabay: https://pixabay.com/api/docs/
+3. Create a file named `.env` in the project root with this line:
+
+   `REACT_APP_PIXABAY_API_KEY=your_key_here`
+
+4. Run `npm start`.
